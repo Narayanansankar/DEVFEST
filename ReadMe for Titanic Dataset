@@ -1,0 +1,41 @@
+Description: 
+         The Titanic dataset contains passenger details from the tragic Titanic shipwreck. It helps analyze 
+survival rates based on demographics, ticket class, fare, and other factors. This dataset is commonly used 
+for data exploration and visualization. 
+
+Dataset Name: TITANIC.csv
+
+Columns  
+  1. PassengerId – Unique ID assigned to each passenger. 
+  2. Survived – Indicates whether a passenger survived (1) or not (0). 
+  3. Pclass – Passenger class (1st, 2nd, or 3rd). Higher classes had better survival rates. 
+  4. Name – Full name of the passenger. 
+  5. Sex – Gender of the passenger (Male/Female). 
+  6. Age – Age of the passenger in years. 
+  7. SibSp – Number of siblings/spouses traveling with the passenger. 
+  8. Parch – Number of parents/children traveling with the passenger. 
+  9. Ticket – Ticket number assigned to the passenger. 
+  10. Fare – Ticket fare paid by the passenger. 
+  11. Cabin – Cabin number (if assigned). 
+  12. Embarked – Port of embarkation: 
+  • S = Southampton 
+  • C = Cherbourg 
+  • Q = Queenstown 
+ 
+Dashboard Analysis Questions 
+1.What is the overall survival rate? 
+  o Show the percentage of passengers who survived vs. those who didn't. 
+  o Visualize: Pie chart or bar chart. 
+2. How does survival rate vary by gender? 
+  o Compare the survival rate between males and females. 
+  o Visualize: Stacked bar chart or column chart. 
+3. Which passenger class had the highest survival rate? 
+  o Analyze survival percentage across 1st, 2nd, and 3rd class. 
+  o Visualize: Bar chart comparing survival rates by passenger class. 
+4. What is the age distribution of Titanic passengers? 
+  o Show the distribution of passengers' ages. 
+  o Visualize: Histogram or box plot. 
+5. Which port had the highest number of passengers boarding? 
+  o Compare the number of passengers boarding from ports S (Southampton), C (Cherbourg), 
+  and Q (Queenstown). 
+  o Visualize: Bar chart or map visualization.
