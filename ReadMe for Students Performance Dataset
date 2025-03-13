@@ -1,0 +1,43 @@
+Description:  
+    This dataset contains comprehensive information regarding candidates' performance in a common 
+entrance examination, alongside various demographic and academic indicators. It is designed to support 
+analysis into the factors influencing success in competitive exams and can serve as a valuable resource for 
+educational researchers and data scientists. 
+
+Columns: 
+    • Sex: Gender of the candidate. 
+    • Caste: Caste classification of the candidate. 
+    Coaching Details: 
+    • Information on whether the candidate attended coaching classes within Assam, outside Assam, or did 
+    not attend any coaching. 
+    • Board Details: Names of the boards where the candidate studied during Class X and Class XII. 
+    • Medium of Instruction: The medium used for teaching during Class XII. 
+    Academic Performance: 
+    • Class X Percentage: Marks secured at the Class X level. 
+    • Class XII Percentage: Marks secured at the Class XII level. 
+    Parental Occupation: 
+          Occupation details for both the candidate's father and mother, which can help analyze socioeconomic 
+          influences on performance. 
+
+Analysis Questions: 
+
+1. Gender & Academic Performance Analysis 
+  • How does academic performance vary between male and female students? 
+  • Visualize: A bar chart comparing performance levels (Excellent, Good, Average) by gender. 
+2. Parental Occupation & Student Performance 
+  • Do students with parents in specific occupations perform better academically? 
+  • Visualize: A heatmap showing student performance levels based on Father’s and Mother’s 
+  occupation. 
+3. Caste & Coaching Influence on Performance 
+  • Is there a correlation between caste category, coaching enrollment, and student grades?
+  • Visualize: A stacked bar chart showing performance distribution across different castes and coaching 
+    status (Yes/No). 
+4. Education Board & Medium of Instruction Impact 
+  • Do students from CBSE, SEBA, AHSEC, or other boards perform differently based on their medium 
+  of instruction? 
+  • Visualize: A grouped bar chart comparing performance across education boards & mediums 
+  (English, Hindi, Assamese, Tamil, etc.). 
+5. Class 10 vs. Class 12 Percentage Comparison 
+  • How does Class 10 percentage correlate with Class 12 percentage? 
+  • Visualize: A scatter plot or line chart comparing Class X Percentage vs. Class XII Percentage.
+  
