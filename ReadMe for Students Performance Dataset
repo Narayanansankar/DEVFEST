@@ -4,6 +4,8 @@ entrance examination, alongside various demographic and academic indicators. It 
 analysis into the factors influencing success in competitive exams and can serve as a valuable resource for 
 educational researchers and data scientists. 
 
+Dataset Name: Student_Performance_on_an_Entrance_Examination.csv
+
 Columns: 
     • Sex: Gender of the candidate. 
     • Caste: Caste classification of the candidate. 
