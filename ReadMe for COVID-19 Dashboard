@@ -1,39 +1,35 @@
 Description: 
-      This dataset helps in identifying potential COVID-19 cases based on key symptoms, contact 
-history, and severity levels. The dataset includes information on patient demographics, symptom occurrence, 
-and severity classification, which can be useful for predicting risk levels and understanding the spread of the 
-disease. 
+      This dataset provides key COVID-19 metrics, including confirmed cases, deaths, recoveries, and active cases across countries. It tracks weekly trends, mortality rates, 
+and regional variations, helping analyze the spread, severity, and impact of the virus. Useful for research, forecasting, and policy decisions.
 
 Dataset Name: covid_19.csv
 
 Columns in the Dataset: 
-  • Country – List of countries the person has visited. 
-  • Age – Classification of the age group based on WHO standards. 
-  • Symptoms – Major symptoms: Fever, Tiredness, Difficulty in breathing, Dry cough, and Sore throat. 
-  • Additional Symptoms – Other symptoms: Body pains, Nasal congestion, Runny nose, Diarrhea, and 
-  Others. 
-  • Severity – Categorized into Mild, Moderate, or Severe cases. 
-  • Contact – Whether the person had contact with a COVID-19 patient. 
+      • Country/Region – Name of the country or region
+      • Confirmed – Total confirmed COVID-19 cases
+      • Deaths – Total number of deaths due to COVID-19
+      • Recovered – Total number of recovered cases
+      • Active – Total number of active cases
+      • New cases – Number of newly reported cases
+      • New deaths – Number of newly reported deaths
+      • New recovered – Number of newly recovered cases
+      • Deaths / 100 Cases – Death rate per 100 confirmed cases
+      • Recovered / 100 Cases – Recovery rate per 100 confirmed cases
+      • Deaths / 100 Recovered – Deaths per 100 recovered cases
+      • Confirmed last week – Total confirmed cases in the previous week
+      • 1 week change – Change in confirmed cases over the past week
+      • 1 week % increase – Percentage increase in confirmed cases over the past week
+      • WHO Region – The WHO region to which the country belongs
 
 Analysis Questions: 
 
-1. Which age group is most affected by severe COVID-19 cases? 
-    Analyze the severity levels across different age groups using a bar chart to understand which age 
-group is at higher risk. 
-
-2. Which symptom is most commonly reported across different countries? 
-    Aggregate the occurrence of each symptom by country and visualize it using a heatmap or bar chart 
-to identify global symptom trends. 
-
-3. How does contact history influence the severity of COVID-19 symptoms? 
-    Compare the severity levels between those who had contact with COVID-19 patients and those who 
-didn't, using a comparative analysis. 
-
-4. Which combination of symptoms is most likely to result in severe cases? 
-    Use clustering techniques or association rule mining to find symptom patterns linked to severe 
-COVID-19 cases. 
-
-5. Which country has the highest percentage of high-risk cases (severe symptoms and contact 
-history)? 
-    Identify high-risk regions by analyzing the overlap between severe cases and individuals with a 
-known contact history. 
+1.Which countries have the highest active cases?
+      Use a bar chart to visualize countries with the highest number of active cases and compare them with the total confirmed cases.
+2.What is the death-to-recovery ratio across different countries?
+      Analyze the ratio of deaths to recoveries using a scatter plot to identify countries where the fatality rate is significantly higher.
+3.Which WHO region has the fastest-growing COVID-19 cases?
+      Use a line graph to track the percentage increase in confirmed cases over the past week across different WHO regions.
+4.What is the relationship between case increase and mortality rate?
+      Compare the percentage increase in cases with the corresponding rise in deaths using a correlation heatmap.
+5.Which countries are experiencing the highest weekly case growth?
+      Use a map visualization to highlight countries where the number of confirmed cases has increased the most in the last week.
