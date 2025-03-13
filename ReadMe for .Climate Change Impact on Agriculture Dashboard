@@ -1,0 +1,35 @@
+Description: 
+           Climate change significantly affects global agriculture by altering temperature patterns, precipitation 
+levels, and the frequency of extreme weather events. These changes impact crop yields, soil health, and 
+irrigation needs, affecting food security and farming sustainability. This dataset is designed to help 
+researchers, data scientists, and policymakers analyze how climate variations influence agricultural 
+productivity across different regions. 
+
+Columns: 
+
+  Region – Simulated geographic region 
+  Year – Modeled year of data collection 
+  Average_Temperature – Simulated temperature levels (°C) 
+  Precipitation – Modeled annual rainfall (mm) 
+  Crop_Yield – Synthetic yield data for selected crops (tons/hectare) 
+  Extreme_Weather_Events – Number of modeled extreme weather occurrences per year 
+
+Analysis question: 
+
+1)How does an increase in average temperature affect crop yield across different regions 
+        Examine whether higher temperatures correlate with lower crop yields and identify regions most 
+    affected by rising temperatures. 
+2)What is the impact of annual precipitation levels on crop yield trends? 
+       Investigate whether regions with higher or lower precipitation levels experience significant changes in 
+    crop productivity. 
+3)Is there a correlation between extreme weather events and crop yield decline? 
+      Analyze whether an increase in extreme weather events (such as droughts or floods) results in a 
+    significant decrease in agricultural output. 
+4)Which regions are most vulnerable to climate change based on extreme weather frequency and crop 
+yield trends? 
+      Identify regions that experience frequent extreme weather events and assess their impact on food 
+    security. 
+5)How do variations in climate factors (temperature, precipitation, extreme weather events) 
+  collectively influence agricultural productivity over time? 
+      Use time-series analysis to determine whether climate changes over the years have had a cumulative 
+  effect on crop production.
