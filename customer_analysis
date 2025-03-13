@@ -1,0 +1,31 @@
+Description:  
+          This dataset contains detailed information about customer shopping behavior, including demographics, 
+product preferences, spending habits, and purchasing patterns. The dataset is useful for analyzing customer 
+trends, product sales, and financial insights across different seasons, categories, and payment methods. 
+
+Dataset Name: shopping_trends.csv
+  
+Columns in the Dataset 
+     Customer ID ,  Age ,  Gender,  Item Purchased,  Category, Purchase Amount in USD, Location,  Size,  
+Color, Review Rate, Payment Type, Shipping Type, Discount Applied, Previous Purchases 
+
+Analysis Questions: 
+
+1. Which product category generates the highest revenue in each season? 
+      Aggregate Purchase Amount in USD by Category and Season, then visualize using a stacked bar 
+chart or heatmap to see seasonal sales trends. 
+
+2. What is the most preferred payment method among high-spending customers? 
+      Segment customers based on total spending and analyse their Preferred Payment Method using a pie 
+chart to identify the most common payment method among high-value shoppers. 
+
+3. Which colour products are most popular in each season? 
+     Analyse the most frequently purchased Colour in each Season and display the results in a stacked bar 
+chart or heatmap to understand seasonal colour trends. 
+
+4. How does spending amount vary across different seasons for different age groups? 
+      Compare the AmountSpend across seasons for different age groups using bar chart. 
+
+5. Which season sees the highest repeat purchases? 
+      Analyze PurchaseFrequency across Seasons and display it using a line graph to observe trends in repeat 
+purchases.
