@@ -4,16 +4,20 @@ import re
 import pandas as pd
 import altair as alt
 
+# Load the trained model and vectorizer
 svm_model = joblib.load("hate_speech_svm_model.pkl")
-vectorizer = joblib.load("/Users/sankar/hatespeech detection/tfidf_vectorizer.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
+# Text cleaning function
 def clean_text(text):
     text = re.sub(r'[^A-Za-z0-9\s]', '', text)
     text = text.lower()
     return text
 
+# Streamlit UI
 st.set_page_config(page_title="Hate Speech Detection", page_icon="🛡️", layout="wide")
 
+# Custom CSS for animations and styling
 st.markdown(
     """
     <style>
@@ -85,9 +89,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Header with animation
 st.markdown("<h1 style='text-align:center; animation: fadeIn 3s;'>🛡️ Hate Speech Detection</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center; animation: fadeIn 4s;'>This app detects whether a given sentence is <strong>Hate Speech</strong>, <strong>Offensive</strong>, or <strong>Neither</strong>.</p>", unsafe_allow_html=True)
 
+# Sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Single Detection", "Batch Detection", "About"])
 
@@ -99,11 +105,13 @@ if page == "Single Detection":
         if user_input.strip() == "":
             st.warning("Please enter some text.")
         else:
+            # Clean and transform input
             cleaned_input = clean_text(user_input)
             try:
                 input_tfidf = vectorizer.transform([cleaned_input])
                 prediction = svm_model.predict(input_tfidf)[0]
 
+                # Decode label
                 label_map = {
                     0: "Hate Speech",
                     1: "Neither",
@@ -126,6 +134,7 @@ elif page == "Batch Detection":
                 predictions = svm_model.predict(input_tfidf)
                 df['prediction'] = predictions
 
+                # Decode labels
                 label_map = {
                     0: "Hate Speech",
                     1: "Neither",
@@ -136,6 +145,7 @@ elif page == "Batch Detection":
                 st.success("Predictions completed!")
                 st.dataframe(df[['sentence', 'prediction']])
 
+                # Visualization
                 st.subheader("Prediction Distribution")
                 chart = alt.Chart(df).mark_bar().encode(
                     x='prediction:N',
@@ -163,4 +173,5 @@ elif page == "About":
     st.write("**Email:** [sankarssn0711@gmail.com](mailto:sankarssn0711@gmail.com)")
     st.write("**Phone:** +91 7010577232")
 
+# Footer
 st.markdown('<div class="footer">© 2023 Hate Speech Detection App</div>', unsafe_allow_html=True)
